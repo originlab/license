@@ -9,17 +9,15 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   build_book:
     uses: originlab/originlab.github.io/.github/workflows/build_book.yml@main
   deploy:
     needs: build_book
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     concurrency:
       group: "pages"
       cancel-in-progress: false
