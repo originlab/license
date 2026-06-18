@@ -328,17 +328,16 @@ RESERVE <span style="color: #0000dd;">1</span> OriginPro<span style="color: #000
 </p><p>After your maintenance renewal has been processed, please perform the following steps to obtain your new FLEXnet server license:
 </p>
 <ol>
-<li>Go to <a class="external free" href="https://www.originlab.com/reginfo" target="_blank">https://www.originlab.com/reginfo</a>.
+<li>Go to <a class="external free" href="https://www.originlab.com/restricted/Reg_sn_admin.aspx" target="_blank">https://www.originlab.com/restricted/Reg_sn_admin.aspx</a>.
 <li>Log in with the same web membership account that you used to obtain the previous FLEX license file.
 <li>After logging in, you will see your "Manage my License(s)" page. Select the check box next to your serial number/version, and then click the <b>Get FLEXnet License</b> button located below the table.
 <li>A web page will now open with the Host Name and Host ID pre-filled. Click the <b>Submit</b> button.
 <li>You will now see the new license file text on the web page. Copy the license file text and paste it into a text editor.
-<li>Stop your FLEXnet service.
 <li>Back up your old license file, and then save the new license file so that it over-writes the old one. 
 <table class="mtip"><tr>
 	<td style="vertical-align:top"><img src="../images/Concurrent_Additional_Information(License)/Mini_bulb.png?v=44828" /></td><td><p>You can check the backup of the old license file to see if you had firewall port numbers. Ensure that you re-add the port numbers to the new license file if they were previously set. For more information about port numbers in the license file, see <a href="../../License/Category/Concurrent_Additional_Information(License).html#On_the_FLEXnet_Server" title="Category:Concurrent Additional Information(License)">here</a>.
 </p></td></tr></table>
-<li>Restart your FLEXnet service and verify that it is correctly reading the new license file.
+<li>Click <b>Reread License</b> button on Start/Stop/Reread tab of LMTools and verify that it is correctly reading the new license file.
 </ol>
 <p><br />
 </p>
@@ -361,14 +360,10 @@ RESERVE <span style="color: #0000dd;">1</span> OriginPro<span style="color: #000
 <li>After logging in, you will see your "Manage my License(s)" page. Select the check box next to your serial number, and then click the Get FLEXnet License button located below the table.</li>
 <li>A web page will now open with the Host Name and Host ID pre-filled. Click the Submit button. </li>
 <li>Copy the license text from the OriginLab website.</li>
-<li>Stop your FLEXnet service if it is running.</li>
 <li>Browse to your FLEXnet server license file and save a back-up to a different location.</li>
 <li>Then open your FLEXnet server license file in a text editor. Replace the current license text with that obtained from the OriginLab website.</li>
 <li>Re-save the license, making sure you have saved to the same location and with the same file name. Warning: On Windows Server 2008, 2012, Windows Vista, 7, 8, 8.1 and 10, make sure your updated license file was saved to the correct folder, rather than in the Windows VirtualStore.</li>
-<li>Restart your FLEXnet service and perform a status enquiry to make sure it is running correctly.</li></ol>
-<table class="noborder"><tr>
-	<td style="vertical-align:top" width="60"><img src="../images/Concurrent_Additional_Information(License)/Tip_icon.png?v=8477" width="57"  border="0" /></td><td><p>If the server cannot start after replacing the license file, it is probable that the server doesn't stop successfully in step 7. Please open the <b>Task Manager</b> dialog--&gt; <b>Services</b> and check if any Origin license server running in the background. If yes, stop and restart it. 
-</p></td></tr></table>
+<li>Click <b>Re-read License</b> button on the Start/Stop/Reread tab of TMTools and perform a status enquiry to make sure it is running correctly.</li></ol>
 <h3><a name="See_Also"></a><span class="mw-headline">See Also</span></h3>
 <ul><li><a href="../../QuickHelp/QuickHelp/Can_I_allow_previous_versions_to_run_on_my_upgrade_license_to_allow_extra_time_to_upgrade_the_client_installations.html" title="QuickHelp:Can I allow previous versions to run on my upgrade license to allow extra time to upgrade the client installations">Can I allow previous versions to run on my upgrade license to allow extra time to upgrade the client installations?</a></li></ul>
 <h2><a name="Deactivate_License_on_Server"></a><span class="mw-headline">Deactivate License on Server</span></h2>
