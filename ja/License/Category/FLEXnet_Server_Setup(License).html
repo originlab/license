@@ -28,14 +28,14 @@
 <p><b>動作環境</b>
 </p>
 <ul><li> 頻繁な再起動を必要としない安定したマシン。サーバーまたはワークステーションのいずれかを推奨。</li>
-<li> OSは、Windows Server 2022, 2019, 2016, 2012, 2008, Windows 11, 10, 8/8.1, 7, Vista (32bit、64bitの両方)に対応しています。</li>
+<li> OSは、Windows Server 2025, 2022, 2019, 2016, 2012, 2008, Windows 11, 10, 8/8.1, 7, Vista (32bit、64bitの両方)に対応しています。</li>
 <li> 低ネットワークトラフィック</li>
 <li> RAM容量が64MB以上</li>
 <li> すべてのOriginコンピュータが接続可能。FLEXnetライセンスサーバとクライアントが TCP/IPプロトコルで通信可能。</li></ul>
 <h3><a name="Install_FLEXnet_server"></a><span class="mw-headline">FLEXnetサーバーのインストール</span></h3>
 <table class="noborder">
 	<tr>
-	<td style="vertical-align:top" width="60"><img src="../images/FLEXnet_Server_Setup(License)/Alert_icon.png" width="57"  border="0" /></td><td><p>ライセンスの問題やセキュリティリスクを回避するために、FLEXnetサーバーを常に最新バージョンに更新することをお勧めします。現在のバージョンは、11.19.6.0です。 
+	<td style="vertical-align:top" width="60"><img src="../images/FLEXnet_Server_Setup(License)/Alert_icon.png" width="57"  border="0" /></td><td><p>ライセンスの問題やセキュリティリスクを回避するために、FLEXnetサーバーを常に最新バージョンに更新することをお勧めします。現在のバージョンは、11.19.9.0です。 
 </p>
 	</td>
 	</tr>
@@ -45,10 +45,10 @@
 <h4><a name="On_a_New_Machine"></a><span class="mw-headline">新しいマシンでの設定</span></h4>
 <p>FlexNetサーバーを新しいマシンにインストールする場合は、FLEXlmServerSetup.exeをダウンロードしてインストールします。または、Origin DVDをお持ちの場合は、そこからインストールすることもできます。C:\Program Files\ またはデスクトップにはインストールしないでください。
 </p>
-<dl><dd><ul><li><a class="external text" href="https://www.originlab.com/restricted/file_download.aspx?site=PRVCDN&amp;file=FLEXlmServerSetup32Bit.exe" target="_blank">FLEXlmServerSetup32Bit.exe</a></li>
-<li><a class="external text" href="https://www.originlab.com/restricted/file_download.aspx?site=PRVCDN&amp;file=FLEXlmServerSetup64Bit.exe" target="_blank">FLEXlmServerSetup64Bit.exe</a></li></ul></dd></dl>
+<dl><dd><ul><li><a class="external text" href="https://www.originlab.com/restricted/file_download.aspx?site=PRVCDN&amp;file=FLEXlmServerSetup32.exe" target="_blank">FLEXlmServerSetup32.exe</a></li>
+<li><a class="external text" href="https://www.originlab.com/restricted/file_download.aspx?site=PRVCDN&amp;file=FLEXlmServerSetup64.exe" target="_blank">FLEXlmServerSetup64.exe</a></li></ul></dd></dl>
 <h4><a name="Updating_Existing_FlexLM_License_Server"></a><span class="mw-headline">既存のFlexLMライセンスサーバの更新</span></h4>
-<p>FLEXnetサーバを最新バージョン（11.19.6.0）にアップグレードするには、インストールされている古いFLEXnetサーバをアンインストールしてから新しいバージョンをインストールすることをお勧めします。Program Filesフォルダとデスクトップにはインストールしないでください。
+<p>FLEXnetサーバを最新バージョン（11.19.9.0）にアップグレードするには、インストールされている古いFLEXnetサーバをアンインストールしてから新しいバージョンをインストールすることをお勧めします。Program Filesフォルダとデスクトップにはインストールしないでください。
 </p><p><font color="blue"><b>古いOriginLab FLEXnetサーバの削除方法</b></font>
 </p>
 <ol><li>古いFLEXnetサーバーフォルダに移動し、ライセンスファイルを探します。新しいサーバでに必要になるので、バックアップを作成します。</li>
@@ -61,8 +61,8 @@
 </p>
 <ul>
 <li>既存のFLEXnetサーバがProgram Filesフォルダまたはデスクトップになく、新規インストールを実行したくない場合は、以下のzipファイルにある<b>lmgrd.exe</b>、<b>orglab.exe</b>、<b>lmtools.exe</b>を置き換えます。
-<br /><a class="external text" href="https://www.originlab.com/restricted/file_download.aspx?site=PRVCDN&amp;file=FLEXnetServer11.19_Files_32Bit.zip" target="_blank">FLEXnetServer11.19_Files_32Bit.zip</a>
-<br /><a class="external text" href="https://www.originlab.com/restricted/file_download.aspx?site=PRVCDN&amp;file=FLEXnetServer11.19_Files_64Bit.zip" target="_blank">FLEXnetServer11.19_Files_64Bit.zip</a>
+<br /><a class="external text" href="https://www.originlab.com/restricted/file_download.aspx?site=PRVCDN&amp;file=FLEXnetServer11.19.9_Files_32Bit.zip" target="_blank">FLEXnetServer11.19.9_Files_32Bit.zip</a>
+<br /><a class="external text" href="https://www.originlab.com/restricted/file_download.aspx?site=PRVCDN&amp;file=FLEXnetServer11.19.9_Files_64Bit.zip" target="_blank">FLEXnetServer11.19.9_Files_64Bit.zip</a>
 <li>32-bit用FLEXlmライセンスサーバは、64-bitのWindowsでも動作します。
 <li><a href="../../License/Category/Concurrent_Additional_Information(License).html#Using_an_Existing_FLEXnet_Server_to_Manage_Origin" title="カテゴリ：同時起動型の追加情報（ライセンス）">既に最新のFLEXnet サーバーが他のソフトウェアの管理用にインストールされている場合は、Originの管理用に同じFLEXnet サーバーを利用出来ます。</a>
 </ul>
